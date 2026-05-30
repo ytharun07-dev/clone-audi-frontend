@@ -1,0 +1,655 @@
+    /* Reset defaults */
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+    /* Body setup */
+    body {
+    /* font-family: "Audi Type", "Helvetica Neue", Arial, sans-serif; */
+    font-family:font;
+    background-color: #fff;
+    overflow-x: hidden;
+    }
+    @font-face {
+        font-family: font;
+        src: url(./auditype_extendednormal.ttf);
+    }
+
+    /* Navbar container */
+    #navbar {
+        height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 18px 60px;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    /* Audi rings logo */
+    #svg1 svg {
+    height: 26px;
+    /* width: auto; */
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    margin-left: 40px;
+    margin-top: 8px;
+    }
+
+    #svg1 svg:hover {
+    opacity: 0.8;
+    }
+
+    /* Navigation menu container */
+    .list {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    }
+
+    /* Navigation menu items */
+    .list ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin-right: 700px;
+    }
+
+    .list ul li {
+    color: #666666;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    letter-spacing: 0.3px;
+    transition: color 0.3s ease;
+    font-family: "Audi Type", "Helvetica Neue", Arial, sans-serif;
+    }
+    
+
+    .list ul li:hover {
+    color: #000;
+    }
+
+    /* Search icon container */
+    #svg2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+    /* Search icon styling */
+    #svg2 svg {
+    height: 22px;
+    width: 22px;
+    cursor: pointer;
+    position: relative;
+    right: 70px;
+    }
+
+    .hero {
+        background-image:radial-gradient(#0000004f,#0000003b) ,url("https://emea-dam.audi.com/adobe/assets/urn:aaid:aem:9967a0a0-2209-4ab1-90f2-72c8659e2c88/as/1920x1080_MST_A234751_02.jpg?width=1920");
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 715px; /* adjust height as needed */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: 120px; 
+        color: #fff;
+        overflow: hidden;
+    }
+
+    .hero h1 {
+    font-size: 48px;
+    font-weight: 500;
+    margin-top: 400px;
+    margin-bottom: 15px;
+    font-family: hello;
+    }
+    @font-face {
+        font-family: hello;
+        src: url(./auditype_extendednormal.ttf);
+    }
+
+    .hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-family: para;
+    }
+    @font-face {
+        font-family: para;
+        src: url(./auditype_extendednormal.ttf);
+    }
+
+    .hero button {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 20px 36px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: btn;
+    }
+    @font-face {
+        font-family: btn;
+        src: url(./auditype_extendednormal.ttf);
+    }
+
+    .hero button:hover {
+    background-color: gainsboro;
+    color: #000;
+    }
+
+    .space{
+        height: 72px;
+    }
+
+    .current p{
+            color: #333333;
+            font-size: 32px;
+            text-align: center;
+            font-family: h2;
+            margin-top: 20px;
+            margin-bottom: 20px;
+    }
+    @font-face {
+        font-family: h2;
+        src: url(./auditype_extendednormal.ttf);
+    }
+
+    #all{
+        /* height: 300px; */
+        width: 100%;
+        display: flex;
+        padding: 72px 96px;
+    }
+    #all .card1 {
+        height: 500px;
+        width: 450px;
+        margin-right: 15px;
+        cursor: default;
+    }
+    #all .card1 img{
+        width: 100%;
+        object-fit: cover;
+        padding-bottom: 12px;
+    }
+    .card1 h3{
+        font-size: 24px;
+        padding-bottom: 12px;
+        color: #333333;
+        font-weight: 400;
+    }
+    .card1 p{
+        color: #333333;
+        padding-bottom: 12px;
+        font-size: 14px;
+    }
+    .one{
+        text-decoration: underline;
+        cursor: pointer;
+        padding-bottom: 12px;
+    }
+    .card2{
+        height: 600px;
+        width: 450px;
+        margin-right: 15px;
+        cursor: default;
+
+    }
+    .card2 img{
+        width: 100%;
+        object-fit: cover;
+        padding-bottom: 12px;
+    }
+    .card2 h3{
+        padding-bottom: 12px;
+        font-weight: 400;
+        font-size: 24px;
+    }
+    .card2 p{
+        color: #333333;
+        font-size: 14px;
+        line-height: 20px;
+        /* font-weight: 400; */
+        padding-bottom: 12px;
+    }
+    .card2 .p1{
+        font-size: 10px;
+        margin-top: 12px;
+    }
+    .card3 .p1{
+        font-size: 10px;
+        margin-top: 12px;
+    }
+    .card3{
+        height: 500px;
+        width: 450px;
+        cursor: default;
+    }
+    .card3 img{
+        width: 100%;
+        object-fit: cover;
+        padding-bottom: 12px;
+    }
+    .card3 h3{
+        font-size: 24px;
+        font-weight: 400;
+        padding-bottom: 12px;
+    }
+    .card3 p{
+        color: #333333;
+        font-size: 14px;
+        padding-bottom: 12px;
+    }
+    .card1 .small{
+        font-size: 10px;
+    }
+    .card3 .small{
+        font-size: 10px;
+    }
+
+    #cards{
+        display: flex;
+        height: 550px;
+        width: 100%;
+        justify-content: center;
+        position: relative;
+        margin-bottom: 40px;
+        color: #fff;
+        cursor: pointer;
+    }
+    .car1{
+        background:linear-gradient(#00000000,#00000052), url("https://emea-dam.audi.com/adobe/assets/urn:aaid:aem:73ae01af-2dfc-4db8-af12-78c3e02b4ece/as/1920x1920_Innovation_A230547_01.jpg?preferwebp=true") ;
+        background-size: cover;
+        background-position: center;
+        object-fit: cover;
+        width: 694px;
+        height: 546px;
+        margin-right: 12px;
+        /* color: #fff; */
+        /* position: absolute; */
+    }
+    .car1 span{
+        position: absolute;
+        top: 400px;
+        left: 280px;
+        font-size: 40px;
+        font-style: 400;
+        
+    }
+    .car1 button{
+        position: absolute;
+        top: 470px;
+        left: 350px;
+        padding: 15px 20px;
+        cursor: pointer;
+    }
+    .car2{
+        background:linear-gradient(#00000000,#00000073) ,url("https://emea-dam.audi.com/adobe/assets/urn:aaid:aem:7fd04c59-35be-4ea4-b302-f95b09e8c483/as/1440x1440_A251206_large.jpg?preferwebp=true") ;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        height: 267px;
+        width: 694px;
+    }
+    .car2 .w0{
+        position: absolute;
+        top: 130px;
+        left: 240px;
+        /* bottom: 40px; */
+        font-size: 32px;
+        font-style: 400;
+    }
+    .car2 .btn0{
+        position: relative;
+        top: 200px;
+        left: 280px;
+        padding: 15px 20px;
+        border: 1px solid #fff;
+        background-color:#00000000;
+        color: white;
+        cursor: pointer;
+
+    }
+    .car2 .car3 .w1{
+        position: relative;
+        top: 120px;
+        left: 150px;
+        font-size: 32px;
+        font-style: 400;
+    
+    }
+    .car2 .car3 .btn1{
+        position: relative;
+       top: 190px;
+       right: 120px;
+        padding: 15px 20px;
+        border: 1px solid #fff;
+        background-color:#00000000;
+        color: white;
+        cursor: pointer;
+    }
+    .car3{
+        background:linear-gradient(#00000000,#00000081) ,url("https://emea-dam.audi.com/adobe/assets/urn:aaid:aem:6935f28c-7ae9-46b7-a9d1-51814a772c09/as/1080x1920_A250752_large.jpg?preferwebp=true");
+        background-size: cover;
+        background-position: center;
+        height: 267px;
+        width: 694px;
+        position: relative;
+        top: 230px;
+    }
+    .car2 button:hover{
+        background-color: rgba(0, 0, 0, 0.162);
+    }
+    .car1 button:hover{
+        background-color: rgb(220, 220, 220);
+
+    }
+
+    #cds{
+        width: 100%;
+        height: 660px;
+        display: flex;
+        /* margin-left: 10px; */
+        position: relative;
+        cursor: pointer;
+        padding: 54px;
+        margin-left: 10px;
+    }
+    .cds1 img{
+        height: 546px;
+        width: 694px;
+        object-fit: cover;
+        position: relative;
+        right: 2px;
+        background: linear-gradient(#000000a1,#000000cb);
+    }
+    .cds1 span{
+        font-size: 40px;
+        color: white;
+        position: relative;
+        bottom: 140px;
+        left: 210px;
+    }
+    .cds1 button{
+        position: relative;
+        bottom: 90px;
+        right: 20px;
+        padding: 13px 20px;
+        cursor: pointer;
+    }
+    .cds2 img{
+        width: 694px;
+        height: 267px;
+        object-fit: cover;
+        position: relative;
+        left: 10px;
+        background: linear-gradient(#000,#000);
+    }
+    .cds2 span{
+        font-size: 32px;
+        color: white;
+        position: relative;
+        bottom: 140px;
+        left: 160px;
+    }
+    .cds2 button{
+        position: relative;
+        bottom: 80px;
+        right: 100px;
+        padding: 13px 20px;
+        cursor: pointer;
+    }
+    .cds3 img{
+        width: 694px;
+        height: 267px;
+        object-fit: cover;
+        position: relative;
+        bottom: 40px;
+        left: 10px;
+    }
+    .cds3 span{
+        font-size: 32px;
+        position: relative;
+        bottom: 185px;
+        left: 100px;
+        color: #fff;
+    }
+    .cds3 button{
+        position: relative;
+        bottom: 120px;
+        right: 220px;
+        padding: 13px 20px;
+        cursor: pointer;
+    }
+    #chill{
+        display: flex;
+        height: 655px;
+        width: 100%;
+        justify-content: center;
+        padding: 54px;
+
+    }
+    .big {
+        position: relative;
+        width: 694px;
+        height: 546px;
+        right: 4px;
+    }
+    .big::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.505),
+        rgba(0, 0, 0, 0)
+    );
+    z-index: 1;
+    pointer-events: none;
+    }
+    .big video{
+        height: 546px;
+        width: 694px;
+        /* width: 100%; */
+        object-fit: cover;
+        
+    }
+    .big span{
+        font-size: 40px;
+        color: white;
+        position: relative;
+        bottom: 155px;
+        left: 260px;
+        z-index: 2;
+    }
+    .big button{
+        position: relative;
+        bottom: 87px;
+        left: 100px;
+        padding: 13px 20px;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .sml{
+        background:linear-gradient(#ffffff00,#000000b0), url("https://emea-dam.audi.com/adobe/assets/urn:aaid:aem:f4df5462-2810-43c5-a7a1-5c4492b6f4f7/as/1080x1920_IK_Landingpage_CoverImage_1065.jpg?preferwebp=true");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* object-fit: cover; */
+        height: 267px;
+        width: 694px;
+        color: white;
+        position: relative;
+        left: 8px;
+    }
+    .sml .o12{
+        font-size: 32px;
+        position: relative;
+        top: 120px;
+        left: 230px;
+    }
+    .sml .q12{
+        position: relative;
+        top: 190px;
+        left: 50px;
+        padding: 13px 20px;
+        cursor: pointer;
+        background-color: transparent;
+        color: #fff;
+        border: 1px solid #fff;
+    }
+    .q12:hover{
+            background-color: #00000044;
+            border: 1px solid gainsboro;
+            color: gainsboro;
+    }
+    .sml1{
+        background: url("https://emea-dam.audi.com/adobe/assets/urn:aaid:aem:4b730b3c-e6c3-4d0d-8204-81a468a18130/as/1920x1080_Karriere_Spirit_A224634_large_01.jpg?preferwebp=true");
+        background-size: cover;
+        background-position:center;
+        height: 267px;
+        width: 694px;
+        position: relative;
+        top: 230px;
+    }
+    .o34{
+        font-size: 32px;
+        position: relative;
+        top: 120px;
+        left: 240px;
+    }
+    .q34{
+        position: relative;
+        top: 190px;
+        left: 75px;
+        padding: 13px 20px;
+        cursor: pointer;
+        background-color: transparent;
+        color: #fff;
+        border: 1px solid #fff;
+    }
+    .q34:hover{
+            background-color: #00000044;
+            border: 1px solid gainsboro;
+            color: gainsboro;
+    }
+    .zer{
+        padding: 32px;
+    }
+    .zero{
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 44px;
+        text-align: center;
+    }
+
+    .card-header{
+        height: 300px;
+        width: 100%;
+        display:flex;
+        justify-content: center;
+        /* align-items: center; */
+        margin: 20px 20px 100px 20px;
+    }
+    .body1 img{
+        height: 243px;
+        width: 432px;
+        margin-left: 50px;
+        margin-bottom: 10px;
+    }
+    .body2 img{
+        height: 243px;
+        width: 432px;
+        margin-left: 40px;
+        margin-bottom: 10px;
+    }
+    .body3 img{
+        height: 243px;
+        width: 432px;
+        margin-right: 100px;
+        margin-bottom: 10px;
+    }
+    .on1{
+        margin-left: 49px;
+    }
+    .on2{
+        margin-left: 40px;
+    }
+    .on3{
+        margin-right:15px;
+    }
+
+    .btnbtn{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .btnbtn button{
+        border: none;
+        padding: 15px 25px ;
+        border-radius: 20px;
+    }
+    .btnbtn button:hover{
+        cursor: pointer;
+        background-color: gainsboro;
+    }
+
+    .last{
+        display: flex;
+        align-items: center;
+        padding: 32px 96px;
+    }
+    .lastimg {
+    width: 90%;
+    height: 320px;
+    /* overflow: hidden; */
+}
+
+    .lastimg img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+        border-radius: 20px;
+    }
+    .content{
+        margin-left: 50px;
+    }
+    .content h2{
+        font-size: 32px;
+        position: relative;
+        bottom: 50px;
+    }
+    .content #eno{
+        position: relative;
+        bottom: 30px;
+        font-size: 12px;
+    }
+    .content button{
+        padding: 15px 20px;
+        border-radius: 25px;
+        border: none;
+        position: relative;
+        bottom: 10px;
+    }
+    .content #owt{
+        position: relative;
+        top: 20px;
+    }
+    
+
+    
+
+
+
+
+    
